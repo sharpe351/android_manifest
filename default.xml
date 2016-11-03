@@ -11,6 +11,9 @@
         fetch="https://github.com/nitrogen-project"
         sync-j="16"/>
 
+    <remote name="sharpe351"
+        fetch="https://github.com/sharpe351" />
+
     <remote name="github"
         fetch="https://github.com" />
 
@@ -310,6 +313,7 @@
     <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
     <project path="hardware/akm" name="platform/hardware/akm" />
     <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
+    <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
     <project path="hardware/bsp/intel" name="platform/hardware/bsp/intel" />
     <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" />
     <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
@@ -503,7 +507,6 @@
     <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="nos" revision="n2" />
 
     <!-- Hardware -->
-    <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="nos" revision="n2" />
     <project path="hardware/libhardware" name="android_hardware_libhardware" remote="nos" revision="n2" />
     <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="nos" revision="n2" />
     <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="nos" revision="n2" />
@@ -551,6 +554,7 @@
     <!-- Nitrogen OS Vendor -->
     <project path="vendor/nitrogen" name="android_vendor_nitrogen" remote="nos" revision="n2" >
         <linkfile src="builder.sh" dest="builder.sh" />
+    <project path="vendor/moto" name="TheMuppets/proprietary_vendor_motorola" remote="github" revision="cm-14.1" />
     </project>
 
     <!-- Device -->
