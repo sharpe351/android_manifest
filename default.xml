@@ -554,8 +554,8 @@
     <!-- Nitrogen OS Vendor -->
     <project path="vendor/nitrogen" name="android_vendor_nitrogen" remote="nos" revision="n2" >
         <linkfile src="builder.sh" dest="builder.sh" />
-    <project path="vendor/moto" name="TheMuppets/proprietary_vendor_motorola" remote="github" revision="cm-14.1" />
     </project>
+    <project path="vendor/moto" name="TheMuppets/proprietary_vendor_motorola" remote="github" revision="cm-14.1" />
 
     <!-- Device -->
     <project path="device/lge/geehrc" name="android_device_lge_geehrc" remote="nos" revision="n2" />
