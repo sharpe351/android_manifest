@@ -11,6 +11,9 @@
         fetch="https://github.com/nitrogen-project"
         sync-j="16"/>
 
+    <remote name="n2od"
+	fetch="https://github.com/nitrogen-os-devices" />
+
     <remote name="sharpe351"
         fetch="https://github.com/sharpe351" />
 
@@ -555,7 +558,7 @@
     <project path="vendor/nitrogen" name="android_vendor_nitrogen" remote="nos" revision="n2" >
         <linkfile src="builder.sh" dest="builder.sh" />
     </project>
-    <project path="vendor/moto" name="nitrogen_os_devices/proprietary_vendor_moto" remote="nos" revision="n2" />
+    <project path="vendor/moto" name="nitrogen_os_devices/proprietary_vendor_moto" remote="n2od" revision="n2" />
 
     <!-- Device -->
     <project path="device/lge/geehrc" name="android_device_lge_geehrc" remote="nos" revision="n2" />
